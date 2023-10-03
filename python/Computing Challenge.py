@@ -19,8 +19,6 @@ a = "2222222222"
 pos1 = 1    # max value of pos is 9
 pos2 = 1    # two pos values cannot be the same
 
-
-
 while pos1 < 9:
     while pos2 < 9:
         if not pos1 == pos2:
