@@ -20,9 +20,13 @@ pos1 = 1    # max value of pos is 9
 pos2 = 1    # two pos values cannot be the same
 
 while pos1 < 9:
+    pos2 = 0
     while pos2 < 9:
         if not pos1 == pos2:
-            temp = a[:pos1]
+            ans = a[:pos1] * a[pos1:pos2] * a[:(10-pos2)]
+            print(ans)
+        pos2 += 1
+    pos1 += 1
 
 
 
