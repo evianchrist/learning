@@ -20,10 +20,13 @@ pos1 = 1    # max value of pos is 9
 pos2 = 1    # two pos values cannot be the same
 
 while pos1 < 9:
-    pos2 = 0
+    pos2 = 1
     while pos2 < 9:
-        if not pos1 == pos2:
-            ans = a[:pos1] * a[pos1:pos2] * a[:(10-pos2)]
+        if (not pos1 == pos2) and (not pos2 < pos1):
+            head = int(a[:pos1])
+            body = int(a[pos1:pos2])
+            tail = int(a[:(10-pos2)])
+            ans = head * body * tail
             print(ans)
         pos2 += 1
     pos1 += 1
