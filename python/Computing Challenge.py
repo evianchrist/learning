@@ -19,6 +19,10 @@ a = "2222222222"
 pos1 = 1    # max value of pos is 9
 pos2 = 1    # two pos values cannot be the same
 
+biggest = 0
+bigpos1 = 0
+bigpos2 = 0
+
 while pos1 < 9:
     pos2 = 1
     while pos2 < 9:
@@ -27,9 +31,19 @@ while pos1 < 9:
             body = int(a[pos1:pos2])
             tail = int(a[:(10-pos2)])
             ans = head * body * tail
-            print(ans)
+            
+            if ans > biggest:
+                biggest = ans
+                bigpos1 = pos1
+                bigpos2 = pos2
+
         pos2 += 1
     pos1 += 1
+
+a = a[:bigpos1] + "*" + a[bigpos1:bigpos2] + "*" + a[bigpos2:]
+
+print(str(a) + " = " + str(biggest))
+
 
 
 
