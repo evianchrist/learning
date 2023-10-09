@@ -20,5 +20,9 @@ while tries > 0:
             else:
                 outcome[3] += 1
     else: # open the third door and show the goat
+        if change: # if change the door
+            outcome[0] += 1
+        else:
+            outcome[3] += 1
 
     tries -= 1
