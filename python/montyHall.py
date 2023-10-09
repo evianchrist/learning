@@ -1,6 +1,6 @@
 import random
 
-tries = 100
+tries = 1000
 doors = ['goat', 'goat', 'car']
 outcome = [0, 0, 0, 0] # 1. wins after change 2. losses after change 3. wins after not change 4. losses after not change
 
