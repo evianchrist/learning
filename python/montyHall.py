@@ -26,3 +26,8 @@ while tries > 0:
             outcome[3] += 1
 
     tries -= 1
+
+print("Wins after switch = " + str(outcome[0]))
+print("\nLosses after switch = " + str(outcome[1]))
+print("\nWins after staying = " + str(outcome[2]))
+print("\nLosses after staying = " + str(outcome[3]))
