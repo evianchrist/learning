@@ -10,3 +10,6 @@ class Solution:
         return k
     
 # tested
+
+# runtime 39ms - beats 71.55% of users
+# memory 16.29mb - beats 44.09% of users
