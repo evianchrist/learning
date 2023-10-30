@@ -24,3 +24,9 @@ class Solution:
                 nums[k] = i
                 k += 1
         return k
+    
+
+# runtime 42ms - beats 48.46% of users
+# memory 16.15mb - beats 76.06% of users
+
+# negligible changes ..
