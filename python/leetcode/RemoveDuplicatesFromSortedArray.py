@@ -8,3 +8,8 @@ class Solution:
                 k += 1
             prev = i
         return k
+    
+# tested
+
+# beats most users
+# very good code indeed
