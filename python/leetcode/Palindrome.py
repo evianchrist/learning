@@ -13,3 +13,19 @@ class Solution:
         else:
             return False
         
+# this was very slow compared to most users
+
+# new better solution below
+# key is isalnum function
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s1 = ""
+        for i in s.lower():
+            if i.isalnum():
+                s1 += i
+
+        if s1 == s1[::-1]:
+            return True
+        else:
+            return False
